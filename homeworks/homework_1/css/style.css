@@ -1,6 +1,28 @@
-
+*{
+  font-family: Helvetica, sans-serif;
+}
 html,
 body {
     background: rgb(255, 255, 255);
     background: linear-gradient(-100deg,  #A2F2F1 35%, #B19AFE 100%);
+    font-size: 16px;
   }
+
+
+#wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 32rem;
+  width: 90%;
+  /* max-height: 32rem;
+  height: 90%; */
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem;
+  
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
