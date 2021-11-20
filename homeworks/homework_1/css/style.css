@@ -26,3 +26,70 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
+
+form {
+  display: flex;
+  /* position: relative; */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25rem;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-weight: bolder;
+}
+
+.login-flutter {
+  font-size: 2.3em;
+  font-weight: lighter;
+}
+
+.login-heading {
+  margin-top: 1rem;
+  color: #848694;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.login-input{
+  padding: 0.5rem;
+  padding-left: 0px;
+  padding-top: 1.5rem;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px;
+  border-bottom: 1px solid rgb(32, 3, 161);
+}
+  
+  
+
+.user-actions{
+  display: flex;
+  /* position: absolute; */
+  padding: 1rem;
+  margin-left: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.login-actions{
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+.submit{
+  padding: 1.5.rem;
+  max-width: 10 rem;
+  font-weight: bold;
+  height: 35px;
+  background-color: rgb(0, 182, 182);
+  color: white;
+  border-radius: 25px;
+  border: transparent;
+}
