@@ -8,6 +8,10 @@ body {
     font-size: 16px;
   }
 
+a {
+  color:blue;
+  text-decoration: none;
+}
 
 #wrapper {
   position: fixed;
