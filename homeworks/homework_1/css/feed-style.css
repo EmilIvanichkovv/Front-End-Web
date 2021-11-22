@@ -10,7 +10,6 @@ body {
 }
 nav {
     background: rgb(255, 255, 255);
-
     max-height: 2rem;
     display: flex;
     flex-direction: row;
@@ -40,7 +39,7 @@ svg {
     border-radius: 50px;
 }
 
-.searchfield-overlay {
+.overlay {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -49,11 +48,11 @@ svg {
     pointer-events: none;
 }
 
-.searchfield-overlay svg {
+.overlay svg {
     margin-left: auto;
 }
 
-.searchfield-overlay span {
+.overlay span {
     margin-right: auto;
     font-size: 13px;
     color: rgb(94, 94, 94);
@@ -71,16 +70,15 @@ svg {
    color: #DBDBDB;
 }
 
-.search-field:focus ~ .searchfield-overlay {
+.search-field:focus ~ .overlay {
   display: none;
 }
 
 .content {
+    max-width: 75rem;
     display: flex;
     flex-direction: row;
-    max-width: 75rem;
     justify-content: center;
-    align-items: center;
 }
 
 /* Profile info */
@@ -150,3 +148,61 @@ svg {
     border: 1px solid rgb(0, 182, 182);
     padding: 0.5rem;
 }
+
+/* Posts  */
+.feed {
+    max-width: 55rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white
+}
+
+.write-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(238, 247, 255);
+}
+
+.profile-picture-write-post {
+    margin-right: auto;
+    max-width: 2rem;
+    border-radius: 50%;
+}
+
+.input-post {
+    width: 92%;
+    font-weight: bolder;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 182, 182);
+    padding: 0.5rem;
+}
+
+.input-post::placeholder {
+    color: rgb(0, 182, 182);
+}
+
+.input-post:focus {
+    outline: none;
+}
+
+.post-overlay {
+    color: rgb(0, 182, 182);;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    pointer-events: none;
+}
+
+.post-overlay svg {
+    margin-left: 52.5%;
+}
+
+.input-post:focus ~ .post-overlay {
+    display: none;
+  }
