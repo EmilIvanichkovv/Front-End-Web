@@ -115,3 +115,6 @@ form {
   border-radius: 25px;
   border: transparent;
 }
+
+@media (max-width: 890px) {
+}
