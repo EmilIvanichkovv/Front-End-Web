@@ -75,6 +75,14 @@ svg {
   display: none;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    max-width: 75rem;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Profile info */
 .profile {
     display: flex;
