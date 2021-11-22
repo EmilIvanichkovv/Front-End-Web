@@ -1,22 +1,29 @@
 *{
     font-family: Helvetica, sans-serif;
     
-  }
+}
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(-100deg,  #A2F2F1 35%, #B19AFE 100%);
+    font-size: 16px;
+    margin: 0px;
+}
 nav {
+    background: rgb(255, 255, 255);
+
     max-height: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0.5rem;
 }
 
 svg {
     max-height: 1rem;
 }
+ /* Search */
 
-.search {
+ .search {
     position: relative;
     display: flex;
     justify-content: center;
@@ -26,8 +33,8 @@ svg {
 
 .search-field {
     padding: 1rem;
-    height: 2.2rem;
-    width: 15rem;
+    height: 2rem;
+    width: 13rem;
     background-color: rgb(238, 247, 255);
     border: 1px solid rgb(218, 216, 216);
     border-radius: 50px;
@@ -68,3 +75,70 @@ svg {
   display: none;
 }
 
+/* Profile info */
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 18rem;
+    background-color: white;
+}
+
+.profile-basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.profile-picture {
+    width: 6rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.profile-more-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 243, 248);
+}
+.user-info {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.profile-more-info-title {
+    font-weight: bold;
+    color: gray;
+}
+
+.profile-more-info-number {
+    font-weight: bolder;
+    color: rgb(0, 182, 182);
+}
+
+.log-out-button {
+    padding-right: 1rem;
+}
+#log-out-button {
+    color: rgb(0, 182, 182);
+    font-weight: bolder;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 182, 182);
+    padding: 0.5rem;
+}
