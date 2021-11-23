@@ -2,6 +2,7 @@
     font-family: Helvetica, sans-serif;
     
 }
+
 body {
     background: rgb(255, 255, 255);
     background: linear-gradient(-100deg,  #A2F2F1 35%, #B19AFE 100%);
@@ -11,9 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-
-
 }
+
 nav {
     width: 95%;
     background: rgb(255, 255, 255);
@@ -26,13 +26,12 @@ nav {
     padding-right: 10rem;
 }
 
-
 svg {
     max-height: 1rem;
 }
- /* Search */
 
- .search {
+ /* Search */
+.search {
     position: relative;
     display: flex;
     justify-content: center;
@@ -97,8 +96,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     max-width: 18rem;
-    background-color: white;
-    
+    background-color: white; 
 }
 
 .profile-basic-info {
@@ -127,6 +125,7 @@ svg {
     margin: 1px;
     background-color: rgb(238, 243, 248);
 }
+
 .user-info {
     display: flex;
     flex-direction: row;
@@ -152,6 +151,7 @@ svg {
 .log-out-button {
     padding-right: 1rem;
 }
+
 #log-out-button {
     color: rgb(0, 182, 182);
     font-weight: bolder;
@@ -168,7 +168,6 @@ svg {
     flex-direction: column;
     background-color: white;
     margin-left: 1rem;
-
 }
 
 .write-post {
@@ -245,7 +244,6 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     box-sizing: border-box;
 }
 
@@ -299,4 +297,81 @@ svg {
 .exit-icon {
     width: 0.5rem;
     padding: 1rem;
+}
+
+@media only screen and (max-width: 890px) {
+
+    body {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(-100deg,  #A2F2F1 35%, #B19AFE 100%);
+        font-size: 16px;
+       
+        margin: 0;
+    }
+
+    nav {
+        width: 80%; 
+        background: rgb(255, 255, 255);
+        max-height: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content {
+        font-size: 0.875rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+     
+    .feed {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .profile {
+        max-width: 19rem;
+        width: 100%;
+        margin-right: 0;  
+    }
+
+    .profile-picture {
+        width: 5.25rem;
+        height: 5.25rem;
+        padding: 0.5rem;
+    }
+    
+    .profile-more-info-title {
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: gray;
+    }
+    
+    .profile-more-info-number {
+        font-size: 1.125rem;
+        font-weight: bolder;
+        color: rgb(0, 182, 182);
+    }
+    
+    .write-post {
+        height: 3 rem ;
+    }
+
+    .input-post {
+        width: 75%;
+        font-weight: bolder;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 1px solid rgb(0, 182, 182);
+        padding: 0.5rem;
+    }
+
+    .post-overlay svg {
+        margin-left: 14rem;
+    }
+    
 }
