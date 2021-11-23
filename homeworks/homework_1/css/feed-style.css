@@ -6,16 +6,26 @@ body {
     background: rgb(255, 255, 255);
     background: linear-gradient(-100deg,  #A2F2F1 35%, #B19AFE 100%);
     font-size: 16px;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+
 }
 nav {
+    width: 95%;
     background: rgb(255, 255, 255);
     max-height: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
+
 
 svg {
     max-height: 1rem;
@@ -75,10 +85,10 @@ svg {
 }
 
 .content {
-    max-width: 75rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: start;
 }
 
 /* Profile info */
@@ -88,6 +98,7 @@ svg {
     justify-content: center;
     max-width: 18rem;
     background-color: white;
+    
 }
 
 .profile-basic-info {
@@ -113,6 +124,7 @@ svg {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 1px;
     background-color: rgb(238, 243, 248);
 }
 .user-info {
@@ -154,10 +166,13 @@ svg {
     max-width: 55rem;
     display: flex;
     flex-direction: column;
-    background-color: white
+    background-color: white;
+    margin-left: 1rem;
+
 }
 
 .write-post {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -200,9 +215,88 @@ svg {
 }
 
 .post-overlay svg {
-    margin-left: 52.5%;
+    margin-left: auto;
 }
 
 .input-post:focus ~ .post-overlay {
     display: none;
-  }
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray ;
+}
+
+.profile-picture-post {
+    max-width: 2.5rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.postN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    box-sizing: border-box;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-info-writer-name {
+    padding-top: 1rem;    
+    font-weight: bold;
+}
+
+.post-info-time {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    color: gray;
+}
+
+.post-content {
+    padding-top: 0.5rem;
+}
+
+.post-reactions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.post-reaction-like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.post-reaction-dislike {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.reaction-icon {
+    width: 1rem;
+    padding: 0.5rem;
+}
+
+.exit-icon {
+    width: 0.5rem;
+    padding: 1rem;
+}
