@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"></link>"
+    <link rel="stylesheet" href="./styles.css"></link>
     <script src="./to-do-list.js" type="module"></script>
-    <title>To-do List</title>
+    <title>To-Do List</title>
 </head>
-<body>
-    <section>
-        <header>
-            <h1>#To-do-list</h1>
-        </header>
-        <main class="task-wrapper">
-            <input placeholder="What to do next?" id="field"/>
-            <ul id="task-list">
-            </ul>
-        </main>
-        <footer>
-            <span class="counter"></span>
-            <ul>
-                <li><button id="filter-all-btn" class="filter-btn">All</button></li>
-                <li><button id="filter-active-btn" class="filter-btn">Active</button></li>
-                <li><button id="filter-completed-btn" class="filter-btn">Completed</button></li>
-            </ul>
-        </footer>
-    </section>
+<body id="grid">
+    <div class="background">
+        <section>
+            <header>
+                <h1>#To-do-list</h1>
+            </header>
+            <main class="task-wrapper">
+                <input placeholder="What to do next?" id="field"/>
+                <ul id="task-list">
+                </ul>
+            </main>
+            <footer>
+                <span class="counter"></span>
+                <ul>
+                    <li><button id="filter-all-btn" class="filter-btn">All</button></li>
+                    <li><button id="filter-active-btn" class="filter-btn">Active</button></li>
+                    <li><button id="filter-completed-btn" class="filter-btn">Completed</button></li>
+                </ul>
+            </footer>
+        </section>
+    </div>
+   
 </body>
 </html>

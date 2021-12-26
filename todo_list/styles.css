@@ -1,3 +1,20 @@
+html {
+    background: rgb(0,32,145);
+    background: linear-gradient(166deg, rgba(0,32,145,1) 0%, rgba(255,0,0,1) 100%) fixed;
+}
+
+
+section {
+    background: rgb(48,164,159);
+    background: linear-gradient(147deg, rgba(48,164,159,1) 0%, rgba(117,94,170,1) 100%);
+    margin: auto;
+    
+    border-radius: 20px;
+
+    width: 600px;
+    height: 700px;
+}
+
 .line-through {
     text-decoration: line-through;
 }
